@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/butterfly.iml" filepath="$PROJECT_DIR$/butterfly.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-in-action/netty-in-action.iml" filepath="$PROJECT_DIR$/netty-in-action/netty-in-action.iml" />
     </modules>
   </component>
