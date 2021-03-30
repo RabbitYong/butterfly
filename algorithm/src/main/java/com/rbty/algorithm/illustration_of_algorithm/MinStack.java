@@ -8,9 +8,12 @@ import java.util.Stack;
  * 辅助栈法，O(1) 时间 获得栈中最小值
  */
 public class MinStack {
-    Deque<Integer> stack ;
-    Deque<Integer> stackMin ;
-    /** initialize your data structure here. */
+    Deque<Integer> stack;
+    Deque<Integer> stackMin;
+
+    /**
+     * initialize your data structure here.
+     */
     public MinStack() {
         stack = new LinkedList<>();
         stackMin = new LinkedList();
@@ -19,13 +22,13 @@ public class MinStack {
 
     public void push(int x) {
         stack.push(x);
-        if (x <= stackMin.peek()){
+        if (x <= stackMin.peek()) {
             stackMin.push(x);
         }
     }
 
     public void pop() {
-        if (stack.pop().equals(stackMin.peek())){
+        if (stack.pop().equals(stackMin.peek())) {
             stackMin.pop();
         }
     }

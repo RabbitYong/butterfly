@@ -7,29 +7,29 @@ package com.rbty.algorithm.illustration_of_algorithm;
  * @date 2021/3/27 10:43
  */
 public class RotateRight {
-    public static ListNode rotateRight(ListNode head,int k){
-        if (head == null){
+    public static ListNode rotateRight(ListNode head, int k) {
+        if (head == null) {
             return head;
         }
         ListNode curr = head;
         int size = 1;
-        while (curr.next!=null){
+        while (curr.next != null) {
             curr = curr.next;
-            size ++;
+            size++;
         }
         curr.next = head;
 
         curr = head;
-        int breakPoint = size - k%size;
+        int breakPoint = size - k % size;
         int point = 1;
-        while (curr!=null){
-            if (point == breakPoint){
+        while (curr != null) {
+            if (point == breakPoint) {
                 head = curr.next;
                 curr.next = null;
                 return head;
             }
             curr = curr.next;
-            point ++;
+            point++;
         }
         return head;
     }
@@ -44,7 +44,7 @@ public class RotateRight {
         node2.next = node3;
         node3.next = node4;
         node4.next = node5;
-        ListNode head = rotateRight(node1,2);
+        ListNode head = rotateRight(node1, 2);
         System.out.println(head);
 
     }

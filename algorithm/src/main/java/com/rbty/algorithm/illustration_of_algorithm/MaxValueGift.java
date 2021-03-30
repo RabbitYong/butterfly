@@ -8,25 +8,25 @@ package com.rbty.algorithm.illustration_of_algorithm;
  */
 public class MaxValueGift {
     public static int maxValue(int[][] grid) {
-        if (grid.length == 0){
+        if (grid.length == 0) {
             return 0;
         }
         int row = grid.length;
         int col = grid[0].length;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                if (i==0 && j==0){
+                if (i == 0 && j == 0) {
 
-                }else if (i==0){
-                    grid[i][j] += grid[i][j-1];
-                }else if (j==0){
-                    grid[i][j] += grid[i-1][j];
-                }else{
-                    grid[i][j] += Math.max(grid[i][j-1],grid[i-1][j]);
+                } else if (i == 0) {
+                    grid[i][j] += grid[i][j - 1];
+                } else if (j == 0) {
+                    grid[i][j] += grid[i - 1][j];
+                } else {
+                    grid[i][j] += Math.max(grid[i][j - 1], grid[i - 1][j]);
                 }
             }
         }
-        return grid[row-1][col-1];
+        return grid[row - 1][col - 1];
     }
 
     public static void main(String[] args) {

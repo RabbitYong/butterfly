@@ -8,11 +8,11 @@ package com.rbty.algorithm.illustration_of_algorithm;
  * @date 2021/3/26 10:12
  */
 public class HammingWeight {
-    public static int hammingWeight(int num){
+    public static int hammingWeight(int num) {
         int result = 0;
-        while (num != 0){
-            num = num&(num-1);
-            result ++;
+        while (num != 0) {
+            num = num & (num - 1);
+            result++;
         }
         return result;
     }

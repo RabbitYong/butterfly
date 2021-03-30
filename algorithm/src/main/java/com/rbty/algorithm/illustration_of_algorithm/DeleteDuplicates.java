@@ -9,9 +9,9 @@ package com.rbty.algorithm.illustration_of_algorithm;
 public class DeleteDuplicates {
     public static ListNode deleteDuplicates(ListNode head) {
         ListNode nodeA = head;
-        while (nodeA != null){
+        while (nodeA != null) {
             ListNode nextNode = nodeA.next;
-            while(nextNode!=null && nextNode.val == nodeA.val){
+            while (nextNode != null && nextNode.val == nodeA.val) {
                 nextNode = nextNode.next;
             }
             nodeA.next = nextNode;

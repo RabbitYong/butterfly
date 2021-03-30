@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 public class MaxQueue {
     Deque<Integer> deque, dequeMax;
+
     public MaxQueue() {
         deque = new LinkedList<>();
         dequeMax = new LinkedList<>();
@@ -19,7 +20,7 @@ public class MaxQueue {
 
     public void push_back(int value) {
         deque.addLast(value);
-        while (!dequeMax.isEmpty() && value > dequeMax.peekLast()){
+        while (!dequeMax.isEmpty() && value > dequeMax.peekLast()) {
             dequeMax.removeLast();
         }
         dequeMax.addLast(value);
@@ -28,7 +29,7 @@ public class MaxQueue {
     public int pop_front() {
         if (deque.isEmpty())
             return -1;
-        if (deque.peekFirst().equals(dequeMax.peekFirst())){
+        if (deque.peekFirst().equals(dequeMax.peekFirst())) {
             dequeMax.removeFirst();
         }
         return deque.removeFirst();

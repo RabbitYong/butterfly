@@ -8,15 +8,15 @@ package com.rbty.algorithm.illustration_of_algorithm;
  */
 public class RemoveDuplicatesFromSortedList {
     public static ListNode deleteDuplicates(ListNode head) {
-        ListNode dump = new ListNode(0,head);
+        ListNode dump = new ListNode(0, head);
         ListNode cur = dump;
-        while(cur.next!=null && cur.next.next!=null){
-            if (cur.next.val == cur.next.next.val){
+        while (cur.next != null && cur.next.next != null) {
+            if (cur.next.val == cur.next.next.val) {
                 int val = cur.next.val;
-                while(cur.next != null && cur.next.val == val){
+                while (cur.next != null && cur.next.val == val) {
                     cur.next = cur.next.next;
                 }
-            }else{
+            } else {
                 cur = cur.next;
             }
         }

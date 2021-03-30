@@ -12,7 +12,7 @@ public class BIOServer {
 
         System.out.println("服务开启，等待连接");
 
-        while(true){
+        while (true) {
             Socket socket = serverSocket.accept();
             System.out.println("服务连接，等待数据");
 
@@ -21,7 +21,7 @@ public class BIOServer {
 
             BufferedReader in = new BufferedReader(new InputStreamReader(inputStream));
 
-            String request,response;
+            String request, response;
 
         }
     }

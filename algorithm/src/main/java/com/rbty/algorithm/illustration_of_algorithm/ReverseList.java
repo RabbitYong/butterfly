@@ -3,12 +3,13 @@ package com.rbty.algorithm.illustration_of_algorithm;
 public class ReverseList {
     /**
      * 双指针
+     *
      * @param head
      * @return
      */
     public static ListNode reverseList(ListNode head) {
         ListNode prev = null;
-        while(head != null){
+        while (head != null) {
             ListNode next = head.next;
             head.next = prev;
             prev = head;
@@ -19,6 +20,7 @@ public class ReverseList {
 
     /**
      * 递归
+     *
      * @param head
      * @return
      */
@@ -26,7 +28,7 @@ public class ReverseList {
         return recur(head, null);
     }
 
-    public static ListNode recur(ListNode cur, ListNode prev){
+    public static ListNode recur(ListNode cur, ListNode prev) {
         if (cur == null) return prev;
         ListNode res = recur(cur.next, cur);
         cur.next = prev;
@@ -43,12 +45,17 @@ public class ReverseList {
         System.out.println(reverseList2(node1).val);
     }
 }
+
 class ListNode {
     int val;
     ListNode next;
-    ListNode(int x) { val = x; }
-    ListNode(int x,ListNode next) {
+
+    ListNode(int x) {
         val = x;
-        this.next=next;
+    }
+
+    ListNode(int x, ListNode next) {
+        val = x;
+        this.next = next;
     }
 }

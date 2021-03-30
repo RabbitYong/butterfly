@@ -17,6 +17,7 @@ interface NestedInteger {
     // Return null if this NestedInteger holds a single integer
     public List<NestedInteger> getList();
 }
+
 public class NestedIterator implements Iterator<Integer> {
 
     List<Integer> values = new ArrayList<>();
@@ -24,11 +25,11 @@ public class NestedIterator implements Iterator<Integer> {
 
     public NestedIterator(List<NestedInteger> nestedList) {
         Iterator<NestedInteger> iterator = nestedList.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             NestedInteger nestedInteger = iterator.next();
-            if (nestedInteger.isInteger()){
+            if (nestedInteger.isInteger()) {
                 values.add(nestedInteger.getInteger());
-            }else {
+            } else {
                 dfs(nestedInteger);
             }
         }
@@ -45,14 +46,14 @@ public class NestedIterator implements Iterator<Integer> {
         return it.hasNext();
     }
 
-    private void dfs(NestedInteger nestedInteger){
+    private void dfs(NestedInteger nestedInteger) {
         List<NestedInteger> list = nestedInteger.getList();
         Iterator<NestedInteger> iterator = list.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             NestedInteger next = iterator.next();
-            if (next.isInteger()){
+            if (next.isInteger()) {
                 values.add(next.getInteger());
-            }else {
+            } else {
                 dfs(next);
             }
         }

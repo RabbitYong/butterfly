@@ -18,6 +18,7 @@ class Node {
 public class CopyRandomList {
     /**
      * 使用 Map 存储 复制节点和被复制节点的关系
+     *
      * @param head
      * @return
      */
@@ -27,7 +28,7 @@ public class CopyRandomList {
         /**
          * 第一次循环，复制值，并将映射关系存入 map
          */
-        while(cur != null){
+        while (cur != null) {
             Node node = new Node(cur.val);
             copyMap.put(cur, node);
             cur = cur.next;
@@ -37,7 +38,7 @@ public class CopyRandomList {
          * 第二次循环，复制阶段 的 next 以及 random
          */
         cur = head;
-        while(cur != null){
+        while (cur != null) {
             Node copyNode = copyMap.get(cur);
             copyNode.next = copyMap.get(cur.next);
             copyNode.random = copyMap.get(cur.random);
@@ -49,13 +50,13 @@ public class CopyRandomList {
     /**
      * 不使用额外空间。遍历第一遍，将复制节点连接在被复制节点之后；遍历第二遍，复制random；遍历第三遍，拆开。
      */
-    public static Node copyRandomList2(Node head){
-        if (head == null){
+    public static Node copyRandomList2(Node head) {
+        if (head == null) {
             return null;
         }
         Node cur = head;
         Node copyHead;
-        while(cur != null){
+        while (cur != null) {
             Node next = cur.next;
             Node copy = new Node(cur.val);
             cur.next = copy;
@@ -63,7 +64,7 @@ public class CopyRandomList {
             cur = next;
         }
         cur = head;
-        while(cur != null){
+        while (cur != null) {
             Node copy = cur.next;
             Node next = copy.next;
             copy.random = cur.random == null ? null : cur.random.next;
@@ -71,7 +72,7 @@ public class CopyRandomList {
         }
         cur = head;
         copyHead = head.next;
-        while(cur != null && cur.next != null){
+        while (cur != null && cur.next != null) {
             Node temp = cur.next;
             cur.next = cur.next.next;
             cur = temp;
