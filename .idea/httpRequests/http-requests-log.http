@@ -1,0 +1,22 @@
+GET http://localhost:8070/config/get
+
+<> 2021-03-29T174815.200.txt
+
+###
+
+GET http://localhost:8070/config/get
+
+<> 2021-03-29T171710.500.json
+
+###
+
+GET http://localhost:8070/config/get
+
+<> 2021-03-29T171625.200.json
+
+###
+
+GET http://config/get
+
+###
+
