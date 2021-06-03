@@ -8,9 +8,10 @@ package com.rbty.algorithm.illustration_of_algorithm;
  */
 public class RemoveDuplicatesFromSortedArray {
     public static int removeDuplicates(int[] arr){
-        int slow=1,fast=1;
-        while (fast < arr.length){
-            if (arr[fast] != arr[slow-1]){
+        int slow = 1;
+        int fast = 1;
+        while(fast < arr.length){
+            if (arr[fast] != arr[fast-1]){
                 arr[slow] = arr[fast];
                 slow ++;
             }

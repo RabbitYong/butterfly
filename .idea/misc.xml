@@ -5,8 +5,31 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../nacos/pom.xml" />
-        <option value="$PROJECT_DIR$/nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/algorithm/pom.xml" />
+        <option value="$PROJECT_DIR$/algorithm/design-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-in-action/pom.xml" />
+        <option value="$PROJECT_DIR$/../area-spider/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../nacos/address/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/api/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/auth/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/client/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/cmdb/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/common/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/config/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/consistency/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/console/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/core/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/distribution/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/istio/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/naming/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/sys/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos/test/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
