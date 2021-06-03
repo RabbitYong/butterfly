@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/area-spider/area-spider.iml" filepath="$PROJECT_DIR$/area-spider/area-spider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../nacos/nacos-all.iml" filepath="$PROJECT_DIR$/../nacos/nacos-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-in-action/netty-in-action.iml" filepath="$PROJECT_DIR$/netty-in-action/netty-in-action.iml" />
     </modules>
   </component>
